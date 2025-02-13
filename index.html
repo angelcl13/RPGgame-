@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        #gameLog {
+            margin-bottom: 20px;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            max-height: 200px;
+            overflow-y: scroll;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>RPG Game</h1>
+    <div id="gameLog"></div>
+    <div>
+        <button class="button" onclick="exploreWorld()">Explore World</button>
+        <button class="button" onclick="startCombat()">Start Combat</button>
+        <button class="button" onclick="craftItem()">Craft Item</button>
+        <button class="button" onclick="interactWithNPC()">Interact with NPC</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
